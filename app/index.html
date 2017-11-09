@@ -6,13 +6,68 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="libs/normalize.css">
-    <title>Document</title>
+    <title>The Family</title>
+    <!--main styles-->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
+    <!--jQuery-->
     <script src="libs/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-
+<header class="header container">
+    <div class="header__logo logo">
+        <img src="img/logo.png" alt="The Family Logo" title="Logo" class="logo-img">
+    </div>
+    <div class="header__nav nav">
+        <ul class="nav-items clr-fix">
+            <li class="nav-item"><a href="#design" class="nav-item--link">дизайны</a></li>
+            <li class="nav-item"><a href="#prices" class="nav-item--link">цены</a></li>
+            <li class="nav-item"><a href="#reviews" class="nav-item--link">отзывы</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-item--link">контакты</a></li>
+        </ul>
+    </div>
+    <div class="header__login login">
+        <button type="button" class="login__button button button--neutral" id="showLoginModuleBtn">войти</button>
+        <div class="login__login-form-module login-form-module">
+            <div class="login-form-module__mod-elem mod-elem"></div>
+            <form class="form login-form login-form--simple">
+                <div class="form-group">
+                    <label for="email" class="form-control label">Email:</label>
+                    <input type="text" id="email" class="form-control input"
+                           data-input="email"
+                           title="email-input"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-control label">Password:</label>
+                    <input type="password" id="password" class="form-control input" data-input="password"
+                           title="email-input"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitSimpleFormBtn"
+                            class="login-form__button button button-sm button--positive">login
+                    </button>
+                </div>
+            </form>
+            <form class="form login-form login-form--by-social">
+                <div class="form-group">
+                    <button type="submit" id="loginByFbBtn" class="button button--login">
+                        <i class="i-fb"></i>
+                        <span>Login with Facebook</span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="loginByGpBtn" class="button button--login">
+                        <i class="i-gp"></i>
+                        <span>Login with Google+</span>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="login-form-module__button button button--neutral">Create a account</button>
+        </div>
+    </div>
+</header>
 
 <!--scripts section-->
 <script src="scripts/common.js"></script>
