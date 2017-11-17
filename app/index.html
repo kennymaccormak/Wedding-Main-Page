@@ -14,60 +14,103 @@
     <script src="libs/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-<header class="header container">
-    <div class="header__logo logo">
-        <img src="img/logo.png" alt="The Family Logo" title="Logo" class="logo-img">
-    </div>
-    <div class="header__nav nav">
-        <ul class="nav-items clr-fix">
-            <li class="nav-item"><a href="#design" class="nav-item--link">дизайны</a></li>
-            <li class="nav-item"><a href="#prices" class="nav-item--link">цены</a></li>
-            <li class="nav-item"><a href="#reviews" class="nav-item--link">отзывы</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-item--link">контакты</a></li>
-        </ul>
-    </div>
-    <div class="header__login login">
-        <button type="button" class="login__button button button--neutral" id="showLoginModuleBtn">войти</button>
-        <div class="login__login-form-module login-form-module">
-            <div class="login-form-module__mod-elem mod-elem"></div>
-            <form class="form login-form login-form--simple">
-                <div class="form-group">
-                    <label for="email" class="form-control label">Email:</label>
-                    <input type="text" id="email" class="form-control input"
-                           data-input="email"
-                           title="email-input"
-                           autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="password" class="form-control label">Password:</label>
-                    <input type="password" id="password" class="form-control input" data-input="password"
-                           title="email-input"
-                           autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="submitSimpleFormBtn"
-                            class="login-form__button button button-sm button--positive">login
-                    </button>
-                </div>
-            </form>
-            <form class="form login-form login-form--by-social">
-                <div class="form-group">
-                    <button type="submit" id="loginByFbBtn" class="button button--login">
-                        <i class="i-fb"></i>
-                        <span>Login with Facebook</span>
-                    </button>
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="loginByGpBtn" class="button button--login">
-                        <i class="i-gp"></i>
-                        <span>Login with Google+</span>
-                    </button>
-                </div>
-            </form>
-            <button type="button" class="login-form-module__button button button--neutral">Create a account</button>
+<header class="header clr-fix">
+    <div class="container clr-fix">
+        <div class="header__logo logo">
+            <img src="img/logo.png" alt="The Family Logo" title="The Family Logo" class="logo-img">
+        </div>
+        <div class="header__nav nav">
+            <ul class="nav-items clr-fix">
+                <li class="nav-item"><a href="#design" title="Дизайны" class="nav-item--link">дизайны</a></li>
+                <li class="nav-item"><a href="#prices" title="Цены" class="nav-item--link">цены</a></li>
+                <li class="nav-item"><a href="#reviews" title="Отзывы" class="nav-item--link">отзывы</a></li>
+                <li class="nav-item"><a href="#contacts" title="Контакты" class="nav-item--link">контакты</a></li>
+            </ul>
+        </div>
+        <div class="header__login login">
+            <button type="button" class="login__button button button--neutral" id="showLoginModuleBtn">войти</button>
+            <div class="login__login-form-module login-form-module">
+                <div class="login-form-module__mod-elem mod-elem"></div>
+                <form class="form login-form login-form--simple">
+                    <div class="form-group">
+                        <label for="email" class="form-control label">Email:</label>
+                        <input type="text" id="email" class="form-control input"
+                               data-input="email"
+                               title="Email"
+                               autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-control label">Password:</label>
+                        <input type="password" id="password" class="form-control input" data-input="password"
+                               title="Password"
+                               autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submitSimpleFormBtn" title="Login"
+                                class="login-form__button button button-sm button--positive">login
+                        </button>
+                    </div>
+                </form>
+                <form class="form login-form login-form--by-social">
+                    <div class="form-group">
+                        <button type="submit" title="Login with Facebook" id="loginByFbBtn"
+                                class="button button--login">
+                            <i class="i-fb"></i>
+                            <span>Login with Facebook</span>
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" title="Login with Google+" id="loginByGpBtn" class="button button--login">
+                            <i class="i-gp"></i>
+                            <span>Login with Google+</span>
+                        </button>
+                    </div>
+                </form>
+                <button type="button" title="Create a account"
+                        class="login-form-module__button button button--neutral">Create a account
+                </button>
+            </div>
         </div>
     </div>
 </header>
+<div class="content container clr-fix">
+    <div class="title-block">
+        <div class="title-block-slides">
+            <div class="title-block-slide title-block-slide--active" style="background-image: url(img/bg_header.jpg)">
+                <div class="title-block-slide__text">
+                    <h1 class="main-title">Ваш свадебный сайт 1</h1>
+                    <h3>Все о вашей свадьбе в едином месте</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda delectus dolor dolores harum id itaque molestias natus, placeat? Consequatur labore magni molestiae nulla recusandae.</p>
+
+                </div>
+            </div>
+            <div class="title-block-slide" style="background-image: url(img/bg_header.jpg)">
+                <div class="title-block-slide__text">
+                    <h1 class="main-title">Ваш свадебный сайт 2</h1>
+                    <h3>Все о вашей свадьбе в едином месте</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda delectus dolor dolores harum id itaque molestias natus, placeat? Consequatur labore magni molestiae nulla recusandae.</p>
+
+                </div>
+            </div>
+            <div class="title-block-slide" style="background-image: url(img/bg_header.jpg)">
+                <div class="title-block-slide__text">
+                    <h1 class="main-title">Ваш свадебный сайт 3</h1>
+                    <h3>Все о вашей свадьбе в едином месте</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda delectus dolor dolores harum id itaque molestias natus, placeat? Consequatur labore magni molestiae nulla recusandae.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="title-block__buttons buttons">
+            <button type="button" class="button button-lg button--info">ВЫБРАТЬ ДИЗАЙН</button>
+            <button type="button" class="button button-lg button--positive">СОЗДАТЬ САЙТ</button>
+        </div>
+    </div>
+    <div class="about-block">
+        <h2 class="main-title">Что ты получишь</h2>
+    </div>
+</div>
+
 
 <!--scripts section-->
 <script src="scripts/common.js"></script>
