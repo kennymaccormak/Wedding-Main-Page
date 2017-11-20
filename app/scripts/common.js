@@ -4,7 +4,7 @@ function Header(selector) {
     h.head = $(selector);
 
     h.changeHeader = function () {
-        if ($("html").scrollTop() > 200) {
+        if ($("html").scrollTop() > 100) {
             h.head.css({
                 "background": "rgba(0,0,0, .85)",
                 "padding": "10px 0"
@@ -19,27 +19,6 @@ function Header(selector) {
 
     h.changeHeader();
     $(window).scroll(h.changeHeader);
-}
-function Login(selector) {
-    var l = $(this);
-
-    var loginModuleStatus = false; // false - is close, true - is open
-
-    l.login = $(selector);
-    l.showLoginModuleBtn = $("#showLoginModuleBtn");
-    l.loginModule = l.login.find(".login-form-module");
-
-    l.showLoginModule = function () {
-        if (loginModuleStatus) {
-            l.loginModule.fadeOut(300);
-            loginModuleStatus = !loginModuleStatus;
-        } else {
-            l.loginModule.fadeIn(300);
-            loginModuleStatus = !loginModuleStatus;
-        }
-    };
-
-    l.showLoginModuleBtn.click(l.showLoginModule);
 }
 function TitleSlides(selector) {
     var ts = $(this);
@@ -66,8 +45,34 @@ function TitleSlides(selector) {
 
 $(function () {
     // todo: create js-logic!!!
-    var login = new Login(".login"),
-        header = new Header(".header"),
-        titleSlides = new TitleSlides(".title-block-slides")
+    var header = new Header(".header")/*,
+        titleSlides = new TitleSlides(".title-block-slides")*/
     ;
+
+    /*slick slider*/
+    $('.design-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
