@@ -625,7 +625,7 @@ p {
 }
 
 .design-slider {
-
+    min-height: 470px;
 }
 
 .design-slide {
@@ -635,8 +635,13 @@ p {
 .slide-img {
     border: 3px solid #8f704c;
     margin: 0 auto;
-    width: 485px;
-    height: 352px;
+    width: 352px;
+    height: 255px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
 .slide-img--img {
@@ -647,6 +652,12 @@ p {
 
 .slide-info {
     margin-top: 20px;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
 .slide-info h4 {
@@ -654,28 +665,95 @@ p {
     text-align: center;
 }
 
+.slide-buttons {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
 
+.slide-buttons .button {
+    height: 50px;
+    line-height: 50px;
+}
 
+.slide-buttons .button:first-child {
+    margin-right: 15px;
+}
 
+.slick-current .slide-buttons {
+    opacity: 1;
+}
 
+.slick-current .slide-img {
+    width: 485px;
+    height: 352px;
+}
 
+.slick-current .slide-info {
+    opacity: 1;
+}
 
+.slick-arrow {
+    width: 12px;
+    height: 22px;
+    top: 35%;
+    z-index: 500;
+}
 
+.slick-arrow:after,
+.slick-arrow:before {
+    content: '';
+    background: #e3c597;
+    display: block;
+    margin-left: -1px;
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
 
+.slick-arrow:after {
+    top: 5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
+.slick-arrow:before {
+    top: 13px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 
+.slick-prev {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
 
+.slick-prev {
+    margin-left: -310px;
+    left: 50%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.slick-next {
+    margin-right: -310px;
+    right: 50%;
+}
 
 /*end choose-design block*/
 
