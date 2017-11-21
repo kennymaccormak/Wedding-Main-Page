@@ -1,0 +1,7 @@
+.simplebar-scrollbar {
+    background: #9f7b51;
+}
+
+.simplebar-track .simplebar-scrollbar.visible {
+    opacity: 1;
+}
