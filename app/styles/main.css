@@ -133,6 +133,14 @@ p {
     margin-right: 0 !important;
 }
 
+.desc {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
 /*icons*/
 
 /*form and form elements*/
@@ -483,6 +491,7 @@ p {
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 300px;
 }
 
 .imgs-box__img-wrap {
@@ -650,8 +659,10 @@ p {
     font-weight: 600;
     line-height: 40px;
     text-align: center;
+    position: relative;
     width: 40px;
     height: 40px;
+    z-index: 50;
 }
 
 .how-it-works-description-title__title {
@@ -781,7 +792,7 @@ p {
     text-align: center;
 }
 
-.slide-buttons {
+.design-slider .slide-buttons {
     text-align: center;
     display: block;
     margin-top: 20px;
@@ -793,37 +804,37 @@ p {
     transition: all .3s;
 }
 
-.slide-buttons .button {
+.design-slider .slide-buttons .button {
     height: 50px;
     line-height: 50px;
 }
 
-.slide-buttons .button:first-child {
+.design-slider .slide-buttons .button:first-child {
     margin-right: 15px;
 }
 
-.slick-current .slide-buttons {
+.design-slider .slick-current .slide-buttons {
     opacity: 1;
 }
 
-.slick-current .slide-img {
+.design-slider .slick-current .slide-img {
     width: 485px;
     height: 352px;
 }
 
-.slick-current .slide-info {
+.design-slider .slick-current .slide-info {
     opacity: 1;
 }
 
-.slick-arrow {
+.design-slider .slick-arrow {
     width: 12px;
     height: 22px;
     top: 35%;
     z-index: 500;
 }
 
-.slick-arrow:after,
-.slick-arrow:before {
+.design-slider .slick-arrow:after,
+.design-slider .slick-arrow:before {
     content: '';
     background: #e3c597;
     display: block;
@@ -835,7 +846,7 @@ p {
     left: 0;
 }
 
-.slick-arrow:after {
+.design-slider .slick-arrow:after {
     top: 5px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -844,7 +855,7 @@ p {
     transform: rotate(45deg);
 }
 
-.slick-arrow:before {
+.design-slider .slick-arrow:before {
     top: 13px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -853,7 +864,7 @@ p {
     transform: rotate(-45deg);
 }
 
-.slick-prev:after {
+.design-slider .slick-prev:after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -861,7 +872,7 @@ p {
     transform: rotate(-45deg);
 }
 
-.slick-prev:before {
+.design-slider .slick-prev:before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -869,12 +880,12 @@ p {
     transform: rotate(45deg);
 }
 
-.slick-prev {
+.design-slider .slick-prev {
     margin-left: -310px;
     left: 50%;
 }
 
-.slick-next {
+.design-slider .slick-next {
     margin-right: -310px;
     right: 50%;
 }

@@ -65,12 +65,36 @@ function MobileHeader(selector) {
     mh.openMenuBtn.click(mh.toggleNav);
     mh.closeMenuBtn.click(mh.toggleNav);
 }
+function Sequencing(selector) {
+    var s = $(this);
+
+    s.sequencing = $(selector);
+    s.btn = s.sequencing.find(".how-it-works-description-title__number");
+    s.decriptionBlock = s.sequencing.find(".how-it-works-description");
+    s.decription = s.decriptionBlock.find(".how-it-works-description__info");
+
+    s.toggleDescription = function () {
+        var $btn = $(this);
+        var info = $btn.closest(".how-it-works-description");
+
+        if (info.hasClass("how-it-works-description--active")) {
+            info.removeClass("how-it-works-description--active")
+        } else {
+            s.decriptionBlock.removeClass("how-it-works-description--active");
+            info.addClass("how-it-works-description--active");
+        }
+    };
+
+    s.btn.click(s.toggleDescription);
+
+}
 
 $(function () {
     // todo: create js-logic!!!
     var header = new Header(".header"),
         titleSlides = new TitleSlides(".title-block-slides"),
-        mobileHeader = new MobileHeader(".header-mobile")
+        mobileHeader = new MobileHeader(".header-mobile"),
+        howItWorks = new Sequencing(".how-it-works")
     ;
 
     /*slick slider*/
@@ -90,4 +114,25 @@ $(function () {
             }
         ]
     });
+
+    if ($(window).width() < 761) {
+        $('.prices-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    } else {
+        $('.prices-slider').slick('unslick');
+    }
+
+    if ($(window).width() < 471) {
+        $('.mob-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    } else {
+        $('.mob-slider').slick('unslick');
+    }
+
 });
