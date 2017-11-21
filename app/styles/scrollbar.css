@@ -5,3 +5,11 @@
 .simplebar-track .simplebar-scrollbar.visible {
     opacity: 1;
 }
+
+.simplebar-track.horizontal {
+    display: none;
+}
+
+.simplebar-content {
+    padding-right: 8px;
+}

@@ -181,6 +181,44 @@ p {
     text-transform: uppercase;
 }
 
+.button--toggle {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    width: 26px;
+    height: 30px;
+}
+
+.button--toggle span {
+    background: #e6cc9a;
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 2px;
+}
+
+.button--toggle span {
+    left: 2px;
+    top: 14px;
+}
+
+.button--toggle span:first-child {
+    top: 7px;
+}
+
+.button--toggle span:last-child {
+    top: 21px;
+}
+
+.button--close {
+    background: url("../img/close.png") no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
 /*logo*/
 
 .logo {
@@ -237,6 +275,46 @@ p {
     color: #e3c597;
 }
 
+/*mob nav*/
+
+.mobile-nav {
+    display: none;
+    background: #000000;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-nav-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.mobile-nav-list-item {
+    margin-bottom: 20px;
+}
+
+.mobile-nav-list-item--link {
+    color: #ffffff;
+    font-size: 1.94rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 3rem;
+}
+
+.mobile-nav-list-item:last-child .mobile-nav-list-item--link {
+    color: #e3c597;
+}
+
+.mobile-nav__button {
+    position: absolute;
+    top: -30px;
+    right: 26px;
+}
+
 /*login*/
 
 .login {
@@ -249,6 +327,34 @@ p {
     line-height: 4px;
 }
 
+/*header-mobile*/
+.header-mobile {
+    display: none;
+    padding-top: 15px;
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-mobile__logo {
+    width: 25%;
+}
+
+.header-mobile__logo .logo-img {
+    max-width: 184px;
+}
+
+.header-mobile__buttons {
+    text-align: center;
+}
+
+.header-mobile__button {
+
+}
+
+/*end header-mobile*/
+
 /*header*/
 
 .header {
@@ -257,7 +363,7 @@ p {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -315,7 +421,7 @@ p {
 }
 
 .title-block-slide__text {
-    width: 50%;
+    width: 60%;
 }
 
 .title-block-slide__text .main-title {
@@ -336,7 +442,7 @@ p {
 
 .title-block__buttons {
     position: absolute;
-    left: 80px;
+    left: 140px;
     top: 450px;
 }
 
@@ -432,6 +538,10 @@ p {
     left: 70%;
 }
 
+.about-us__item-mob-title {
+    display: none;
+}
+
 .about-us-info-block {
     margin-top: 70px;
 }
@@ -507,7 +617,7 @@ p {
 }
 
 .how-it-works-descriptions__last {
-
+    position: relative;
 }
 
 .how-it-works-description__title {
@@ -519,6 +629,12 @@ p {
 
 .how-it-works-descriptions__last .how-it-works-description:first-child {
     float: left;
+}
+
+.how-it-works-descriptions__last .how-it-works-description:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .how-it-works-descriptions__last .how-it-works-description:last-child,
@@ -737,12 +853,20 @@ p {
     transform: rotate(-45deg);
 }
 
-.slick-prev {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+.slick-prev:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.slick-prev:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .slick-prev {
@@ -898,7 +1022,7 @@ p {
     color: #f1e1ca;
     font-size: .78rem;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .buy-certificate__buttons {
@@ -1015,6 +1139,7 @@ p {
     padding-left: 100px;
     position: relative;
     width: 80%;
+    min-height: 120px;
 }
 
 .faq-item-title {
@@ -1111,34 +1236,6 @@ p {
     font-weight: 400;
     font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*end footer block*/
 

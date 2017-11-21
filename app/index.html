@@ -17,12 +17,39 @@
     <!--main styles-->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media.css">
     <!--jQuery-->
     <script src="libs/jquery-3.2.1.min.js"></script>
     <!--simplebar script-->
     <script src="libs/scrollbar/simplebar.js"></script>
 </head>
 <body>
+<header class="header-mobile">
+    <div class="row main-wrap">
+        <div class="col-md-3 col-xs-3 col-sm-3 header-mobile__logo logo">
+            <img src="img/logo.png" alt="The Family Logo" title="The Family Logo" class="logo-img">
+        </div>
+        <div class="col-md-6 col-xs-6 col-sm-6 header-mobile__buttons">
+            <button type="button" id="openMenuBtn" class="header-mobile__button button button--toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="row mobile-nav">
+        <div class="col-sm-12 col-xs-12">
+            <button type="button" id="closeMenuBtn" class="mobile-nav__button button button--close"></button>
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-item--link" href="#">ДИЗАЙНЫ</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-item--link" href="#">ЦЕНЫ</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-item--link" href="#">ОТЗЫВЫ</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-item--link" href="#">КОНТАКТЫ</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-item--link" href="#">ВОЙТИ</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 <header class="header clr-fix">
     <div class="main-wrap clr-fix">
         <div class="header__logo logo">
@@ -80,10 +107,10 @@
         </div>
     </div>
     <div class="row about-us__item">
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-6">
             <h2 class="about-us-item-title">Онлайн помощник в организации свадьбы</h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-6">
             <div class="about-us-item-imgs imgs-box">
                 <div class="imgs-box__img-wrap">
                     <img src="img/photo1.jpg" class="imgs-box__img imgs-box-img">
@@ -93,29 +120,29 @@
         </div>
     </div>
     <div class="row about-us__item">
-        <div class="col-md-8 about-us-info-block">
+        <div class="col-md-12 col-lg-8 about-us-info-block">
             <div class="row">
-                <div class="col-md-5 about-us-info">
+                <div class="col-md-12 col-lg-5 about-us-info">
                     <h4>ВЕДИТЕ СПИСОК ГОСТЕЙ ОНЛАЙН</h4>
                     <h5>Не нужно писать список гостей на листочках, вести в екселе или еще где-то…. Добавляйте, удаляйте, редактируйте список гостей онлайн</h5>
                 </div>
-                <div class="col-md-7 about-us-info p0">
+                <div class="col-md-12 col-lg-7 about-us-info p0">
                     <h4>РАСПИШИТЕ В ДЕТАЛЯХ ПРОГРАММУ СВАДЬБЫ</h4>
                     <h5>Гости на сайте всегда смогут найти полную информацию о свадьбе. Расписание, карта проезда, схема рассадки по столам, список подарков, и многое другое</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 about-us-info">
+                <div class="col-md-12 col-lg-5 about-us-info">
                     <h4>БЕСПЛАТНЫЙ ТАРИФ</h4>
                     <h5>Если вам нужно только проинформировать гостей о программе свадьбы выберайте бесплатный тариф и обезпечьте себе минимум организационных вопросов</h5>
                 </div>
-                <div class="col-md-7 about-us-info p0">
+                <div class="col-md-12 col-lg-7 about-us-info p0">
                     <h4>ПОДТВЕРЖДЕНИЕ ПРИСУТСТВИЯ ГОСТЕЙ ОНЛАЙН</h4>
                     <h5>Вы сможете не только получать подтверждение присутствия гостей через сайт, а и задать им любые нужные вам вопросы (например: что вы будете пить и т.д.)</h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 about-us-info-block">
+        <div class="col-md-12 col-lg-4 about-us-info-block about-us-info-block--tablet">
             <div class="about-us-item-imgs imgs-box">
                 <div class="imgs-box__img-wrap">
                     <img src="img/photo2.jpg" class="imgs-box__img imgs-box-img">
@@ -126,65 +153,70 @@
     </div>
     <div class="about-us__item">
         <div class="row about-us-info-block">
-            <div class="col-md-7 about-us-info about-us-info--mt">
+            <div class="col-lg-7 col-md-12 about-us-info about-us-info--mt">
                 <h4>УЗНАЮТ ВСЮ ИНФОРМАЦИЮ О СВАДЬБЕ С САЙТА</h4>
                 <h5>Как добраться, где ночевать, во сколько и где нужно быть, что дарить и многое другое гости смогут узнать посетив сайт. Это будет удобно и гостям и вам. Будет меньше организационных вопросов </h5>
             </div>
-            <div class="col-md-5 about-us-info mt0">
+            <div class="col-lg-5 col-md-12 about-us-info about-us-info-title--tablet mt0">
                 <h2>Гости будут знать всё и всех</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-7 about-us-info">
+            <div class="col-lg-7 col-md-12 about-us-info">
                 <h4>ПОЗНАКОМЯТСЯ С ДРУГИМИ ГОСТЯМИ</h4>
                 <h5>Список гостей - классный способ перезнакомить всех гостей между собой чтобы на свадьбе царила более дружественная обстановка</h5>
             </div>
-            <div class="col-md-5 about-us-info">
+            <div class="col-lg-5 col-md-12 about-us-info">
                 <h4>СМОГУТ ОСТАВИТЬ СВОИ ПОЖЕЛАНИЯ</h4>
                 <h5>На сайте или через приложения у всех гостей и родственников будет возможность оставить вам свои пожелания и напутственные слова</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-7 about-us-info">
+            <div class="col-lg-7 col-md-12 about-us-info">
                 <h4>УЗНАЮТ БОЛЬШЕ О ТВОЕЙ ВТОРОЙ ПОЛОВИНКЕ И О ВАС</h4>
                 <h5>Вы сможете более близко познакомить всех гостей и родственников со своей второй половинкой, поделиться историями знакомвства, первых свиданий, предложения руки и серца. Поделиться как своими детскими так и первыми совместными фото</h5>
             </div>
-            <div class="col-md-5 about-us-info">
+            <div class="col-lg-5 col-md-12 about-us-info">
                 <h4>СМОГУТ ДЕЛИТЬСЯ ФОТО И ВИДЕО В РЕЖИМЕ ОНЛАЙН</h4>
                 <h5>Очень крутая возможность отправлять фото и видео прямо со свадьбы вам на сайт. То что не увидят фотографы и видеооператоры - увидят и запечатлят ваши гости </h5>
             </div>
         </div>
     </div>
     <div class="about-us__item about-us-digital row">
-        <div class="col-md-3 about-us-info-block">
-            <h2 class="">Digital свадьба</h2>
+        <div class="col-md-12 col-lg-3 about-us-info-block">
+            <h2>Digital свадьба</h2>
         </div>
-        <div class="col-md-9 about-us-info-block">
+        <div class="col-md-12 col-lg-9 about-us-info-block">
             <div class="row">
-                <div class="col-md-6 about-us-info">
+                <div class="col-md-12 col-lg-6 about-us-info">
                     <h4>СТИЛЬНЫЕ ДИЗАЙНЫ САЙТА</h4>
                     <h5>Сайт полностью адаптивный и будет одинаково красиво смотреться на любом гаджете. Дизайн сайта можно менять в любой момент когда вам этого захочется</h5>
                 </div>
-                <div class="col-md-6 about-us-info">
+                <div class="col-md-12 col-lg-6 about-us-info">
                     <h4>ОНЛАЙН ЗАГРУЗКА ФОТО И ВИДЕО </h4>
                     <h5>Гости смогут в режиме онлайн отправлять вам фото и видео со свадьбы, стримить свадьбу, записывать и отправлять свои пожелания</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 about-us-info">
+                <div class="col-md-12 col-lg-6 about-us-info">
                     <h4>СВАДЕБНЫЙ ЧАТ</h4>
                     <h5>Используя приложения гости смогут оставить свое сообщение (текст, фото или видео) как на общую страничку так и приватным сообщением</h5>
                 </div>
-                <div class="col-md-6 about-us-info">
+                <div class="col-md-12 col-lg-6 about-us-info">
                     <h4>ПРИЛОЖЕНИЕ ДЛЯ ТЕЛЕФОНА</h4>
                     <h5>Бесплатное приложение для телефонов упростит загрузку фото и видео со свадьбы</h5>
                 </div>
             </div>
         </div>
     </div>
-    <div class="about-us__item">
+    <div class="about-us__item evil">
+        <div class="row about-us__item-mob-title">
+            <div class="col-md-12 about-us-info">
+                <h2>Не потеряешь ни одного свадебного момента</h2>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-md-7 about-us-info-block">
+            <div class="col-md-12 col-lg-7 about-us-info-block">
                 <div class="row">
                     <div class="col-md-12 about-us-info about-us-info--mt">
                         <h4>КАЖДЫЙ ГОСТЬ БУДЕТ ТВОИМ ФОТО И ВИДЕО-ОПЕРАТОРОМ</h4>
@@ -198,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 about-us-info-block">
+            <div class="col-md-12 col-lg-5 about-us-info-block about-us__item-desk-title">
                 <div class="row">
                     <div class="col-md-12 about-us-info">
                         <h2>Не потеряешь ни одного свадебного момента</h2>
@@ -207,13 +239,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12 col-lg-7">
                 <div class="col-md-12 about-us-info">
                     <h4>ПОЖЕЛАНИЯ ОТ ГОСТЕЙ</h4>
                     <h5>У гостей будет возможность оставить вам свои пожелание на сайте, а также они смогут сделать это прямо во время свадьбы (это лучший момент для поздравления) через приложение для телефонов</h5>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
                 <div class="col-md-12 about-us-info">
                     <h4>ИСТОРИЯ ВАШЕЙ ЛЮБВИ</h4>
                     <h5>История знакомства, первого свидания, первого путешевствия, предложение руки и серца, досвадебные фотографии и многое другое сохранится на сайте. Пройдут годы и ценность этой информации будет огромной</h5>
@@ -221,12 +253,12 @@
             </div>
         </div>
     </div>
-    <div class="about-us__item">
+    <div class="about-us__item evil2">
         <div class="row about-us-info-block">
-            <div class="col-md-5">
+            <div class="col-xs-5 col-md-5 col-lg-5">
                 <h2>У вас будет свой сайт свадьбы навсегда</h2>
             </div>
-            <div class="col-md-7">
+            <div class="col-xs-7 col-md-7 col-lg-7">
                 <div class="about-us-item-imgs imgs-box imgs-box--inverse imgs-box--left">
                     <div class="imgs-box__img-wrap">
                         <img src="img/photo3.jpg" class="imgs-box__img imgs-box-img">
@@ -236,9 +268,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-5 col-md-7">
+            <div class="col-lg-offset-5 col-lg-7 col-md-12">
                 <div class="row">
-                    <div class="col-md-7 about-design-block">
+                    <div class="col-md-12 col-lg-7 about-design-block">
                         <div class="row">
                             <div class="col-md-12 about-us-info">
                                 <h4>АДАПТИВНЫЙ ДИЗАЙН</h4>
@@ -258,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 about-design-imgs-block">
+                    <div class="col-md-12 col-lg-5 about-design-imgs-block">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="about-us-item-imgs imgs-box imgs-box--inverse">
@@ -283,7 +315,7 @@
     </div>
     <div class="row how-it-works-descriptions">
         <div class="how-it-works-descriptions__line"></div>
-        <div class="col-md-3 how-it-works-description how-it-works-descriptions__first">
+        <div class="col-md-3 col-xs-3 how-it-works-description how-it-works-descriptions__first">
             <div class="how-it-works-description__title">
                 <div class="how-it-works-description-title__number">1</div>
                 <h4 class="how-it-works-description-title__title">РЕГИСТРАЦИЯ</h4>
@@ -293,7 +325,7 @@
                 <p>Выберите дизайн который подходит вам больше всего. Но не стоит переживать - вы всегда сможете изменить дизайн на любой из доступных вариантов!</p>
             </div>
         </div>
-        <div class="col-md-3 how-it-works-description">
+        <div class="col-md-3 col-xs-3 how-it-works-description">
             <div class="how-it-works-description__title">
                 <div class="how-it-works-description-title__number">2</div>
                 <h4 class="how-it-works-description-title__title">ВЫБОР ДИЗАЙНА</h4>
@@ -303,7 +335,7 @@
                 <p>Выберите дизайн который подходит вам больше всего. Но не стоит переживать - вы всегда сможете изменить дизайн на любой из доступных вариантов!</p>
             </div>
         </div>
-        <div class="col-md-3 how-it-works-description how-it-works-description--active">
+        <div class="col-md-3 col-xs-3 how-it-works-description how-it-works-description--active">
             <div class="how-it-works-description__title">
                 <div class="how-it-works-description-title__number">3</div>
                 <h4 class="how-it-works-description-title__title">ВЫБОР ТАРИФА</h4>
@@ -313,7 +345,7 @@
                 <p>Выберите дизайн который подходит вам больше всего. Но не стоит переживать - вы всегда сможете изменить дизайн на любой из доступных вариантов!</p>
             </div>
         </div>
-        <div class="col-md-3 how-it-works-descriptions__last">
+        <div class="col-md-3 col-xs-3 how-it-works-descriptions__last">
             <div class="how-it-works-description">
                 <div class="how-it-works-description__title">
                     <div class="how-it-works-description-title__number">4</div>
@@ -593,7 +625,7 @@
 </div>
 <footer class="footer main-wrap">
     <div class="row footer-items">
-        <div class="col-md-3 footer-item">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-item">
             <ul class="footer-list">
                 <li class="footer-list-item">Product</li>
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Popular</a></li>
@@ -602,7 +634,7 @@
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Features </a></li>
             </ul>
         </div>
-        <div class="col-md-3 footer-item">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-item">
             <ul class="footer-list">
                 <li class="footer-list-item">COMPANY</li>
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Press Releases</a></li>
@@ -611,7 +643,7 @@
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Works</a></li>
             </ul>
         </div>
-        <div class="col-md-3 footer-item">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-item">
             <ul class="footer-list">
                 <li class="footer-list-item">LEARN MORE</li>
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Support</a></li>
@@ -620,7 +652,7 @@
                 <li class="footer-list-item"><a class="footer-list-item--link" href="#">Ger Started Guide</a></li>
             </ul>
         </div>
-        <div class="col-md-3 footer-item">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-item">
             <ul class="footer-list">
                 <li class="footer-list-item">CONTACT</li>
                 <li class="footer-list-item">Ukraine, Kiev,</li>
@@ -631,7 +663,7 @@
         </div>
     </div>
     <div class="row copyright-block">
-        <div class="col-md-12">
+        <div class="col-md-12 col-xs-12">
             <address class="copyright">&copy; 2017 TheFamily. All rights reserved.</address>
         </div>
     </div>
