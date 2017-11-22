@@ -4,7 +4,7 @@ function Header(selector) {
     h.head = $(selector);
 
     h.changeHeader = function () {
-        if ($("html").scrollTop() > 100) {
+        if ($("body").scrollTop() > 100) {
             h.head.css({
                 "background": "rgba(0,0,0, .85)",
                 "padding": "10px 0"
