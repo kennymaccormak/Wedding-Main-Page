@@ -348,6 +348,13 @@
     text-decoration: underline;
 }
 
+.modal-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 150px;
+}
+
 /*registration*/
 .registration-form {
     padding-right: 40px;
