@@ -281,18 +281,6 @@
     display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*modal*/
 .modal {
     background: #fff;
@@ -354,6 +342,12 @@
     color: #9f7b51;
 }
 
+.modal-sub-title__step-3-link {
+    display: none;
+    color: #000000;
+    text-decoration: underline;
+}
+
 /*registration*/
 .registration-form {
     padding-right: 40px;
@@ -386,19 +380,6 @@
 
 .registration-form__buttons .modal-button--positive {
     float: right;
-}
-
-.registration-form__buttons--final-step {
-    text-align: right;
-}
-
-.registration-form__buttons--final-step .modal-button--negative {
-    float: none;
-    margin-right: 45px;
-}
-
-.registration-form__buttons--final-step .modal-button--positive {
-    float: none;
 }
 
 .registration-msg {
@@ -475,10 +456,109 @@
     float: right;
 }
 
+.step-2-info {
+    display: none;
+    margin: 35px 0 0 0;
+}
 
+.step-2-info__text {
+    color: #000000;
+    font-family: "Prata", sans-serif;
+    font-size: .67rem;
+    line-height: .9rem;
+    text-align: center;
+}
 
+.step-2-info__text a {
+    color: #3b5998;
+    text-decoration: underline;
+}
 
+.modal-registration[data-step="1"] .registration-form-step[data-step-form="1"] {
+    display: block;
+}
 
+.modal-registration[data-step="1"] .registration-form-step[data-step-form="2"] {
+    display: none;
+}
 
+.modal-registration[data-step="1"] .registration-form-step[data-step-form="3"] {
+    display: none;
+}
 
+.modal-registration[data-step="2"] .registration-form-step[data-step-form="1"] {
+    display: none;
+}
 
+.modal-registration[data-step="2"] .registration-form-step[data-step-form="2"] {
+    display: block;
+}
+
+.modal-registration[data-step="2"] .registration-form-step[data-step-form="3"] {
+    display: none;
+}
+
+.modal-registration[data-step="3"] .registration-form-step[data-step-form="1"] {
+    display: none;
+}
+
+.modal-registration[data-step="3"] .registration-form-step[data-step-form="2"] {
+    display: none;
+}
+
+.modal-registration[data-step="3"] .registration-form-step[data-step-form="3"] {
+    display: block;
+}
+
+.modal-registration[data-step="1"] .step-3-none .registration-form-step:first-child {
+    display: block;
+}
+
+.modal-registration[data-step="1"] .step-3-none .registration-form-step:last-child {
+    display: none;
+}
+
+.modal-registration[data-step="2"] .step-3-none .registration-form-step:first-child {
+    display: none;
+}
+
+.modal-registration[data-step="2"] .step-3-none .registration-form-step:last-child {
+    display: block;
+}
+
+.modal-registration[data-step="2"] .step-2-info {
+    display: block;
+}
+
+.modal-registration[data-step="3"] .step-3-width {
+    width: 100%;
+}
+
+.modal-registration[data-step="3"] .step-3-none {
+    display: none;
+}
+
+.modal-registration[data-step="3"] .modal-sub-title__step-3-link {
+    display: block;
+}
+
+.modal-registration[data-step="3"] .modal-sub-title__link {
+    display: none;
+}
+
+.modal-registration[data-step="3"] .modal-sub-title__text {
+    display: none;
+}
+
+.modal-registration[data-step="3"] {
+    text-align: right;
+}
+
+.modal-registration[data-step="3"] .modal-button--negative {
+    float: none;
+    margin-right: 45px;
+}
+
+.modal-registration[data-step="3"] .modal-button--positive {
+    float: none;
+}

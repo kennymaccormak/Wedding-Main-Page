@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
-<div class="modal modal-registration" id="modalRegistration">
+<div class="modal modal-registration" id="modalRegistration" data-step="3">
     <div class="modal-head">
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6 modal-head-logo">
@@ -34,14 +34,15 @@
             <div class="col-md-12 col-sm-12 col-xs-12 modal-sub-title">
                 <span class="modal-sub-title__text">У вас уже есть аккаунт The Family?</span>
                 <a href="#" class="modal-sub-title__link">Войти</a>
+                <a href="#" class="modal-sub-title__step-3-link">Посмотреть разницу в функционале  тарифов</a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-offset-3 col-md-6 col-sm-12 col-md-12">
                 <div class="row">
-                    <div class="col-md-12"> <!--if step 3 -> class="col-md-12" -->
+                    <div class="col-md-6 step-3-width">
                         <form class="form registration-form">
-                            <div class="registration-form-step" data-step-form="1">
+                            <div class="registration-form-step registration-form--active-step" data-step-form="1">
                                 <div class="form-field">
                                     <input type="text" id="brideName" class="input" placeholder="Введите имя невесты">
                                 </div>
@@ -67,7 +68,7 @@
                                            placeholder="Укажите пароль">
                                 </div>
                             </div>
-                            <div class="registration-form-step registration-form--active-step" data-step-form="3">
+                            <div class="registration-form-step" data-step-form="3">
                                 <div class="form-field check-box-block">
                                     <div class="check-box">
                                         <input type="checkbox" class="check-box-input" id="freeTariff">
@@ -92,18 +93,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--if step 3 -> buttons class='registration-form__buttons--final-step' -->
-                            <div class="form-field registration-form__buttons buttons registration-form__buttons--final-step clr-fix">
+                            <div class="form-field registration-form__buttons buttons clr-fix">
                                 <button type="button" class="button modal-button modal-button--negative">Назад</button>
                                 <button type="button" class="button modal-button modal-button--positive">Далее</button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-6" style="display: none"> <!--if step 3 -> style="display: none" -->
+                    <div class="col-md-6 step-3-none">
                         <div class="registration-form-step">
                             <div class="registration-msg">Не волнуйтесь, вы всегда сможете изменить все данные в своем личном кабинете</div>
                         </div>
-                        <div class="registration-form-step registration-form--active-step">
+                        <div class="registration-form-step">
                             <form class="form registration-social-form">
                                 <div class="form-field">
                                     <button type="button" class="button social-button social-button--fb">
@@ -123,13 +123,16 @@
                                 <div class="form-field"></div>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-12 col-md-12"></div>
+        <div class="row step-2-info">
+            <div class="col-md-offset-3 col-md-6 col-sm-12 col-md-12">
+                <div class="step-2-info__text">
+                    Создавая аккаунт, вы принимаете наши <a href="#">условия использования, политику конфиденциальности</a>> и подписываетесь на рассылку новостей The Family
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal-footer">
@@ -142,5 +145,25 @@
         </div>
     </div>
 </div>
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        function changeStep() {
+            var modal = $("#modalRegistration"),
+                $btn = $(this),
+                nextStep = parseInt($btn.attr("data-registr-step")),
+                registrationStepBtns = $(".registration-step")
+            ;
+
+            registrationStepBtns.each(function () {
+                $(this).removeClass("registration-step--active");
+            });
+            $btn.addClass("registration-step--active");
+            modal.attr("data-step", nextStep);
+        }
+
+        $(".registration-step").click(changeStep);
+    })
+</script>
 </body>
 </html>
