@@ -1,0 +1,484 @@
+.form {
+    width: 100%;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    display: inline-block;
+    outline: none;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+::-moz-placeholder {
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+:-moz-placeholder {
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.label {
+    color: #000;
+    font-family: "Prata", sans-serif;
+    font-size: .7rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.modal-button {
+    background: transparent;
+    border: 1px solid #685033;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: "Prata", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: none;
+    height: 48px;
+}
+
+.button--modal-close {
+    background: transparent;
+    position: relative;
+    width: 46px;
+    height: 46px;
+}
+
+.button--modal-close span {
+    background: #000;
+    border-radius: 4px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 38px;
+    height: 6px;
+}
+
+.button--modal-close span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.button--modal-close span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.modal-button--negative {
+    color: #000000;
+}
+
+.modal-button--positive {
+    background: #685033;
+    color: #ffffff;
+}
+
+.social-button {
+    background: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    padding: 0;
+    width: 300px;
+    height: 52px;
+}
+
+.social-button__icon {
+    background: no-repeat center center;
+    float: left;
+    display: block;
+    width: 60px;
+    height: 100%;
+}
+
+.social-button__text {
+    font-family: "Prata", sans-serif;
+    font-size: .8rem;
+    letter-spacing: normal;
+    line-height: 52px;
+    text-transform: none;
+    float: left;
+    width: 236px;
+}
+
+.i-fb {
+    background-image: url("../img/icon_fb.png");
+}
+
+.i-gp {
+    background-image: url("../img/icon_gp.png");
+}
+
+.i-inst {
+    background-image: url("../img/icon_inst.png");
+}
+
+.social-button--fb {
+    border-color: #3b5998;
+}
+
+.social-button--gp {
+    border-color: #d34836;
+}
+
+.social-button--inst {
+    border-color: #d22e91;
+}
+
+.social-button--fb .i-fb {
+    background-color: #3b5998;
+}
+
+.social-button--gp .i-gp {
+    background-color: #d34836;
+}
+
+.social-button--inst .i-inst {
+    background-color: #d22e91;
+}
+
+.social-button--fb .social-button__text {
+    color: #3b5998;
+}
+
+.social-button--gp .social-button__text {
+    color: #d34836;
+}
+
+.social-button--inst .social-button__text {
+    color: #d22e91;
+}
+
+.check-box-block {
+
+}
+
+.check-box {
+    border: 1px solid #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: 52px;
+}
+
+.check-box:hover {
+    border-color: #9f7b51;
+}
+
+.check-box-input {
+    display: none;
+}
+
+.check-box-label {
+    color: #000000;
+    cursor: pointer;
+    font-family: "Prata", sans-serif;
+    padding-left: 70px;
+    padding-right: 10px;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.check-box-label:before {
+    content: '';
+    border: 1px solid #a88761;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 10px;
+    left: 12px;
+}
+
+.check-box-label:after {
+    content: '';
+    background: url("../img/icon_check.png") no-repeat center;
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    top: 18px;
+    left: 19px;
+}
+
+.check-box-input:checked + .check-box-label:before {
+    background-color: #9f7b51;
+}
+
+.check-box-input:checked + .check-box-label:after {
+    display: block;
+}
+
+.check-box-label__name {
+    font-size: 1.7rem;
+    line-height: 52px;
+    height: 52px;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+}
+
+.check-box-label__price {
+    font-size: 1.7rem;
+    line-height: 52px;
+    float: right;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*modal*/
+.modal {
+    background: #fff;
+    padding: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.modal-registration {
+}
+
+.modal-head {
+}
+
+.modal-head-logo {
+    text-align: left;
+}
+
+.modal-logo {
+    color: #000000;
+    font-family: "Prata", sans-serif;
+    font-size: 2.78rem;
+    font-weight: 400;
+}
+
+.modal-head-buttons {
+    text-align: right;
+}
+
+.modal-body {
+    margin-top: 66px;
+}
+
+.modal-title {
+    color: #000000;
+    font-family: "Prata", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.modal-sub-title {
+    font-family: "Prata", sans-serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-sub-title__text {
+    color: #000000;
+}
+
+.modal-sub-title__link {
+    color: #9f7b51;
+}
+
+/*registration*/
+.registration-form {
+    padding-right: 40px;
+}
+
+.registration-social-form {
+    border-left: 1px solid #000000;
+    padding-left: 40px;
+}
+
+.registration-social-form .social-button {
+    margin-bottom: 22px;
+}
+
+.registration-form-step {
+    display: none;
+}
+
+.registration-form--active-step {
+    display: block;
+}
+
+.registration-form__buttons {
+    margin-top: 30px;
+}
+
+.registration-form__buttons .modal-button--negative {
+    float: left;
+}
+
+.registration-form__buttons .modal-button--positive {
+    float: right;
+}
+
+.registration-form__buttons--final-step {
+    text-align: right;
+}
+
+.registration-form__buttons--final-step .modal-button--negative {
+    float: none;
+    margin-right: 45px;
+}
+
+.registration-form__buttons--final-step .modal-button--positive {
+    float: none;
+}
+
+.registration-msg {
+    border-left: 1px solid #000;
+    color: #685033;
+    font-family: "Prata", sans-serif;
+    font-weight: 400;
+    font-size: 1.67rem;
+    line-height: 2.5rem;
+    padding: 25px 0 25px 40px;
+}
+
+.registration-steps {
+    text-align: center;
+    margin-top: 130px;
+    position: relative;
+}
+
+.registration-steps:after {
+    content: '';
+    background: #9f7b51;
+    display: block;
+    margin-top: -1px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+}
+
+.registration-step {
+    background: #9f7b51;
+    border: 1px solid #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-sizing: content-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    z-index: 5;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.registration-step--active {
+    background: #685033;
+}
+
+.registration-step:hover {
+    border-color: #9f7b51;
+}
+
+.registration-step.registration-step--active:hover {
+    border-color: #685033;
+}
+
+.registration-step:first-child {
+    float: left;
+}
+
+.registration-step:last-child {
+    float: right;
+}
+
+
+
+
+
+
+
+
