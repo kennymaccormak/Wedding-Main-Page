@@ -77,11 +77,23 @@
     .about-us-item-title {
         padding-right: 0;
     }
+
+    .design-slider .slick-arrow {
+        top: 69%
+    }
 }
 
 @media screen and (max-width: 1100px) {
     .title-block__buttons {
         left: 80px;
+    }
+
+    .design-slider .slick-arrow {
+        top: 60%
+    }
+
+    .design-slider .slide-buttons .button:first-child {
+        margin-right: 0;
     }
 }
 
@@ -106,6 +118,15 @@
         left: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .about-us {
+        background-position-y: 1300px;
+    }
+
+    .about-us__item.evil {
+        background-position-y: 0;
+        background-position-x: center;
     }
 
     .about-us-title {
@@ -178,6 +199,10 @@
     .how-it-works-descriptions__last .how-it-works-description:first-child .how-it-works-description__info {
         min-width: 230px;
         left: -95px;
+    }
+
+    .design-slider .slick-arrow {
+        top: 79%;
     }
 
     .how-it-works-descriptions__last .how-it-works-description:last-child .how-it-works-description__info {
@@ -376,9 +401,6 @@
 }
 
 @media screen and (max-width: 430px) {
-    .design-slider .slick-arrow {
-        top: 55%;
-    }
 
     .title-block__buttons {
         top: 530px;
@@ -387,5 +409,11 @@
     .title-block__buttons .button {
         margin-right: 0;
         margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .design-slider .slick-arrow {
+        top: 55%;
     }
 }
