@@ -450,7 +450,8 @@ p {
 
 .title-block__buttons {
     position: absolute;
-    left: 140px;
+    /*left: 140px;*/
+    left: 10%;
     top: 450px;
 }
 
@@ -467,6 +468,11 @@ p {
 /*about-us block*/
 
 .about-us {
+    background: url("../img/bg_cont1.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position-x: 0;
+    background-position-y: 900px;
     margin-top: -250px;
 }
 
@@ -476,6 +482,12 @@ p {
 }
 
 .about-us__item {
+}
+
+.about-us__item.evil {
+    background: url("../img/bg_cont2.jpg") no-repeat;
+    background-position-x: 0;
+    background-position-y: 150px;
 }
 
 .about-us-item-title {
@@ -1045,7 +1057,9 @@ p {
 }
 
 .buy-certificate-img {
-    margin-right: 80px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /*end buy-certificate block*/

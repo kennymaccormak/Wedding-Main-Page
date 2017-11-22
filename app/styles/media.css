@@ -71,7 +71,11 @@
 @media screen and (max-width: 1250px) {
     .title-block__buttons {
         left: 107px;
-        top: 390px;
+        top: 455px;
+    }
+
+    .about-us-item-title {
+        padding-right: 0;
     }
 }
 
@@ -294,6 +298,10 @@
     .title-block__buttons {
         top: 460px;
     }
+
+    .title-block__buttons .button {
+        margin-right: 6px;
+    }
 }
 @media screen and (max-width: 470px) {
     .desc {
@@ -364,10 +372,6 @@
     .buy-certificate-img {
         width: 100%;
         height: auto;
-    }
-
-    .title-block__buttons .button {
-        margin-right: 6px;
     }
 }
 
