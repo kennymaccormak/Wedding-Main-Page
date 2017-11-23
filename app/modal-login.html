@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/normalize.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="libs/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+<div class="modal modal-login" id="modalLogin">
+    <div class="modal-head">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 modal-head-logo">
+                <div class="modal-logo">The Family</div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 modal-head-buttons">
+                <button type="button" class="button p0 button--modal-close">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 modal-title">Вход</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 modal-sub-title">
+                <span class="modal-sub-title__text">У вас еще нет аккаунта?</span>
+                <a href="#" class="modal-sub-title__link">Создать аккаунт</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="form login-form">
+                            <div class="form-field">
+                                <span class="error-msg">Не правильно введены email или пароль, проверьте и попробуйте снова</span>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" id="loginEmail" class="input valid-error" placeholder="Email">
+                            </div>
+                            <div class="form-field">
+                                <input type="password" id="loginPassword" class="input"
+                                       placeholder="Пароль">
+                            </div>
+                            <div class="form-field row">
+                                <div class="check-box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="checkbox" class="check-box-input" id="freeTariff">
+                                    <label class="check-box-label clr-fix" for="freeTariff">
+                                        <span class="check-box-label__name">Запомнить меня</span>
+                                    </label>
+                                </div>
+                                <div class="reset-password col-md-6 col-sm-12 col-xs-12">
+                                    <a href="#" class="login-form__link">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <div class="form-field login-form__buttons buttons clr-fix">
+                                <button type="button" class="button modal-button modal-button--positive">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form login-social-form">
+                            <div class="form-field">
+                                <button type="button" class="button social-button social-button--fb">
+                                    <i class="social-button__icon i-fb"></i>
+                                    <span class="social-button__text">Продолжить с Facebook</span>
+                                </button>
+                                <button type="button" class="button social-button social-button--gp">
+                                    <i class="social-button__icon i-gp"></i>
+                                    <span class="social-button__text">Продолжить с Google+</span>
+                                </button>
+                                <button type="button" class="button social-button social-button--inst">
+                                    <i class="social-button__icon i-inst"></i>
+                                    <span class="social-button__text">Продолжить с Instagram</span>
+                                </button>
+                            </div>
+                            <div class="form-field"></div>
+                            <div class="form-field"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="libs/jquery-3.2.1.min.js"></script>
+</body>
+</html>

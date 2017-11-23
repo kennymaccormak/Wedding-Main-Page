@@ -7,6 +7,14 @@
     margin-bottom: 13px;
 }
 
+.error-msg {
+    color: #e2574c;
+    font-family: "Prata", sans-serif;
+    font-size: 1.11rem;
+    line-height: 1.4rem;
+    /*display: none;*/
+}
+
 .input {
     background: transparent;
     border: none;
@@ -25,6 +33,11 @@
     padding: 0 10px;
     width: 100%;
     height: 40px;
+}
+
+.valid-error {
+    color: #e2574c;
+    border-bottom-color: #e2574c;
 }
 
 ::-webkit-input-placeholder {
@@ -356,16 +369,19 @@
 }
 
 /*registration*/
-.registration-form {
+.registration-form,
+.login-form {
     padding-right: 40px;
 }
 
-.registration-social-form {
+.registration-social-form,
+.login-social-form {
     border-left: 1px solid #000000;
     padding-left: 40px;
 }
 
-.registration-social-form .social-button {
+.registration-social-form .social-button,
+.login-social-form .social-button {
     margin-bottom: 22px;
 }
 
@@ -377,7 +393,8 @@
     display: block;
 }
 
-.registration-form__buttons {
+.registration-form__buttons,
+.login-form__buttons {
     margin-top: 30px;
 }
 
@@ -387,6 +404,10 @@
 
 .registration-form__buttons .modal-button--positive {
     float: right;
+}
+
+.login-form__buttons .modal-button--positive {
+    float: left;
 }
 
 .registration-msg {
@@ -401,7 +422,6 @@
 
 .registration-steps {
     text-align: center;
-    margin-top: 130px;
     position: relative;
 }
 
@@ -568,4 +588,177 @@
 
 .modal-registration[data-step="3"] .modal-button--positive {
     float: none;
+}
+
+.login-form .check-box {
+    width: 50%;
+    height: 36px;
+}
+
+.login-form .check-box:hover {
+    border-color: #fff;
+}
+
+.login-form .check-box .check-box-label {
+    display: inline-block;
+    padding-left: 26px;
+    width: auto;
+}
+
+.login-form .check-box .check-box-label:before {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: 0;
+}
+
+.login-form .check-box .check-box-label:after {
+    top: 9px;
+    left: 3px;
+}
+
+.login-form .check-box-label__name {
+    font-family: "Prata", sans-serif;
+    font-size: .89rem;
+    line-height: 36px;
+    height: 36px;
+    text-transform: none;
+}
+
+.login-form .reset-password {
+    text-align: right;
+    height: 36px;
+}
+
+.login-form .reset-password .login-form__link {
+    color: #9f7b51;
+    font-family: "Prata", sans-serif;
+    font-size: .89rem;
+    line-height: 36px;
+    height: 36px;
+}
+
+.reset-password-form {
+
+}
+
+.no-email {
+    background: url("../img/icon_error.png") no-repeat right center;
+}
+
+.reset-password-form .error-msg {
+    text-align: right;
+    display: block;
+}
+
+.reset-password-form .reset-password-form__buttons {
+    text-align: right;
+}
+
+.reset-password-form .reset-password-form__buttons .button:first-child {
+    margin-right: 15px;
+}
+
+@media screen and (max-height: 850px) {
+    .modal-footer {
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    .modal-registration,
+    .modal-login {
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .modal-footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .registration-form__buttons .button {
+        display: block;
+        margin-top: 10px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .modal-registration[data-step="3"] .registration-form__buttons .button,
+    .registration-form__buttons .button {
+        display: block;
+        margin-top: 15px;
+        margin-right: 15px;
+        float: left;
+    }
+
+    .registration-form,
+    .login-form {
+        padding-right: 0;
+    }
+
+    .registration-social-form,
+    .registration-msg,
+    .login-social-form {
+        border: none;
+        padding-left: 0;
+    }
+
+    .login-form .reset-password {
+        text-align: left;
+    }
+
+    .login-form .check-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .social-button {
+        width: 270px;
+    }
+
+    .social-button__text {
+        width: 206px;
+    }
+
+    .registration-social-form .social-button,
+    .login-social-form .social-button {
+        margin: 0 auto 22px;
+    }
+
+    .check-box {
+        height: auto;
+    }
+
+    .check-box-label {
+        text-align: left;
+    }
+
+    .check-box-label span {
+        float: none;
+    }
+
+    .modal-footer {
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .social-button {
+        width: 240px;
+    }
+
+    .social-button__text {
+        width: 176px;
+    }
+
+    .registration-social-form .social-button,
+    .login-social-form .social-button {
+        margin: 0 auto 22px;
+    }
 }
